@@ -1,0 +1,526 @@
+.App
+{
+  width: 100dvw;
+  height: 100dvh;
+}
+/* login */
+/* .body
+{
+  width: 100%;
+  height: 100%;
+  border: 2px  solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  
+} */
+.login{
+  .page
+  {
+    width: 900px;
+    height: 500px;
+    
+    display: flex;
+    border-radius: 10px;
+    background-color:transparent;
+
+    .photo
+    {
+      width: 50%;
+      height: 100%;
+      
+      background-color: brown;
+    
+    }
+    form
+    {
+      width: 50%;
+      height: 100%;
+      
+      display: flex;
+      flex-direction: column;
+      
+      align-items: center;
+      background-color: rgba(9, 8, 8, 0.351);
+      h1{
+        margin-bottom: 60px;
+        color: rgb(223, 203, 30);
+        
+        padding-bottom: 10px ;
+        border-bottom: 2px solid rgb(213, 182, 23);
+      }
+      label{
+        width: 350px;
+        height: 50px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      input
+      {
+        width: 300px;
+        height: 40px;
+        outline: none;
+        border: none;
+        border-bottom: 2px solid;
+        font-size: 20px;
+        border-radius: 10px;
+        background-color: transparent;
+        color: white;
+        padding-left: 10px;
+      }
+      .icon
+      {
+        position: relative;
+        left: -24px;
+        font-size: 20px;
+      }
+      .forgot{
+  
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 60px;
+        
+      }
+      a{
+        text-decoration: none;
+      }
+      button
+      {
+        width: 300px;
+        height: 40px;
+        cursor: pointer;
+        font-size: 20px;
+        border-radius: 15px;
+        position: relative;
+        left: -17px;
+        background-color: rgb(235, 232, 105);
+        border: none;
+      }
+      .go_to_signUp
+      {
+        margin-top: 30px;
+        a{
+            margin-left: 10px;
+        }
+      }
+    }
+
+  }
+}
+
+
+.registration
+{
+  .page
+  {
+    width: 900px;
+    height: 500px;
+    
+    display: flex;
+    border-radius: 10px;
+    background-color:transparent;
+    form
+    {
+      width: 50%;
+      height: 100%;
+      
+      display: flex;
+      flex-direction: column;
+      
+      align-items: center;
+      background-color: rgba(9, 8, 8, 0.351);
+      h1{
+        margin-bottom: 60px;
+        color: rgb(223, 203, 30);
+        
+        padding-bottom: 10px ;
+        border-bottom: 2px solid rgb(213, 182, 23);
+      }
+      .box
+      {
+        width: 350px;
+        height: 300px;
+        
+        overflow-x: hidden;
+        overflow-y: scroll;
+        label
+        {
+          width: 350px;
+          height: 50px;
+          
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 20px;
+        }
+        input
+        {
+          width: 300px;
+          height: 40px;
+          outline: none;
+          border: none;
+          border-bottom: 2px solid;
+          font-size: 20px;
+          border-radius: 10px;
+          background-color: transparent;
+          color: white;
+          padding-left: 10px;
+        }
+        .icon
+        {
+          position: relative;
+          left: -24px;
+          font-size: 20px;
+        }
+        .Academic
+        {
+          width: 130px;
+          
+        }
+        select{
+          font-size: 15px;
+          padding: 7px;
+          background-color: transparent;
+          border: none;
+        }
+        .branch
+        {
+          display: flex;
+          justify-content: space-around;
+          
+        }
+        
+
+      }
+      button
+        {
+          width: 300px;
+          height: 40px;
+          cursor: pointer;
+          font-size: 20px;
+          border-radius: 15px;
+          position: relative;
+          left: -17px;
+          background-color: rgb(235, 232, 105);
+          border: none;
+        }
+        ::-webkit-scrollbar {
+          width: 0px;
+        }
+        
+    }
+    .photo
+    {
+      width: 50%;
+      height: 100%;
+      
+      background-color: brown;
+    
+    }
+  }
+}
+
+
+/* mail */
+
+.mail
+{
+  width: 100dvw;
+  height: 100dvh;
+  border: 2px solid;
+  display: flex;
+  justify-content: center;
+  .mail_box
+  {
+    width: 400px;
+    height: 250px;
+    border: 5px solid rgb(199, 30, 30);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    align-items: center;
+    position: absolute;
+    top: 3px;
+    animation: moveDown 2s ease-in-out 1s forwards;
+    background-color: rgba(9, 8, 8, 0.351);
+    h1
+    {
+      color: rgb(219, 206, 94);
+    }
+    label
+    {
+      width: 350px;
+      height: 50px;
+      
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    input
+    {
+      width: 300px;
+      height: 40px;
+      border-radius: 20px;
+      padding-left: 10px;
+      font-size: 20px;
+      border: none;
+      border-bottom: 2px solid;
+      background-color: transparent;
+      color: rgb(245, 243, 243);
+      outline: none;
+    }
+    .icon{
+      position: relative;
+      left: -35px;
+      font-size: 24px;
+    }
+    button
+    {
+      width: 300px;
+      height: 40px;
+      font-size: 20px;
+      margin-top: 30px;
+      border-radius: 20px;
+      background-color: rgb(219, 206, 94);
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
+@keyframes moveDown {
+  from{
+    top:3px;
+  }
+  to
+  {
+    top:150px
+  }
+}
+
+/* otp */
+.otp
+{
+  width: 100dvw;
+  height: 100dvh;
+  border: 2px solid;
+  display: flex;
+  justify-content: center;
+  .mail_box
+  {
+    width: 400px;
+    height: 250px;
+    border: 5px solid rgb(199, 30, 30);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    align-items: center;
+    position: absolute;
+    top: 3px;
+    animation: moveDown 2s ease-in-out 1s forwards;
+    background-color: rgba(9, 8, 8, 0.351);
+    h1
+    {
+      color: rgb(219, 206, 94);
+    }
+    label
+    {
+      width: 350px;
+      height: 50px;
+      
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    input
+    {
+      width: 300px;
+      height: 40px;
+      border-radius: 20px;
+      padding-left: 10px;
+      font-size: 20px;
+      border: none;
+      border-bottom: 2px solid;
+      background-color: transparent;
+      color: rgb(245, 243, 243);
+      outline: none;
+    }
+    .icon{
+      position: relative;
+      left: -35px;
+      font-size: 24px;
+    }
+    button
+    {
+      width: 300px;
+      height: 40px;
+      font-size: 20px;
+      margin-top: 30px;
+      border-radius: 20px;
+      background-color: rgb(219, 206, 94);
+      border: none;
+    }
+  }
+}
+@keyframes moveDown {
+  from{
+    top:3px;
+  }
+  to
+  {
+    top:150px
+  }
+}
+
+.resetpassword
+{
+  width: 100dvw;
+  height: 100dvh;
+  border: 2px solid;
+  display: flex;
+  justify-content: center;
+  .mail_box
+  {
+    width: 400px;
+    height: 350px;
+    border: 5px solid rgb(199, 30, 30);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    align-items: center;
+    position: absolute;
+    top: 3px;
+    animation: moveDown 2s ease-in-out 1s forwards;
+    background-color: rgba(9, 8, 8, 0.351);
+    h1
+    {
+      color: rgb(219, 206, 94);
+    }
+    label
+    {
+      width: 350px;
+      height: 50px;
+      
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    input
+    {
+      width: 300px;
+      height: 40px;
+      border-radius: 20px;
+      padding-left: 10px;
+      font-size: 20px;
+      border: none;
+      border-bottom: 2px solid;
+      background-color: transparent;
+      color: rgb(245, 243, 243);
+      outline: none;
+    }
+    .icon{
+      position: relative;
+      left: -35px;
+      font-size: 24px;
+    }
+    button
+    {
+      width: 300px;
+      height: 40px;
+      font-size: 20px;
+      margin-top: 30px;
+      border-radius: 20px;
+      background-color: rgb(219, 206, 94);
+      border: none;
+    }
+  }
+}
+@keyframes moveDown {
+  from{
+    top:3px;
+  }
+  to
+  {
+    top:150px
+  }
+}
+
+.resendotp
+{
+  width: 100dvw;
+  height: 100dvh;
+  border: 2px solid;
+  display: flex;
+  justify-content: center;
+  .mail_box
+  {
+    width: 400px;
+    height: 250px;
+    border: 5px solid rgb(199, 30, 30);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    align-items: center;
+    position: absolute;
+    top: 3px;
+    animation: moveDown 2s ease-in-out 1s forwards;
+    background-color: rgba(9, 8, 8, 0.351);
+    h1
+    {
+      color: rgb(219, 206, 94);
+    }
+    label
+    {
+      width: 350px;
+      height: 50px;
+      
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    input
+    {
+      width: 300px;
+      height: 40px;
+      border-radius: 20px;
+      padding-left: 10px;
+      font-size: 20px;
+      border: none;
+      border-bottom: 2px solid;
+      background-color: transparent;
+      color: rgb(245, 243, 243);
+      outline: none;
+    }
+    .icon{
+      position: relative;
+      left: -35px;
+      font-size: 24px;
+    }
+    button
+    {
+      width: 300px;
+      height: 40px;
+      font-size: 20px;
+      margin-top: 30px;
+      border-radius: 20px;
+      background-color: rgb(219, 206, 94);
+      border: none;
+    }
+  }
+}
+@keyframes moveDown {
+  from{
+    top:3px;
+  }
+  to
+  {
+    top:150px
+  }
+}
