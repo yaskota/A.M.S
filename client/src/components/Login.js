@@ -23,7 +23,7 @@ const handlogin=async(event)=>{
       axios.defaults.withCredentials=true;
       if(!validateEmail(email))
       {
-        toast.error("please enter a valid email");
+        toast.error("please enter valid email");
         return;
       }
       try {
