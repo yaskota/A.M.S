@@ -63,6 +63,7 @@ export const register=async(req,res)=>{
     
 }
 
+
 export const login=async(req,res)=>{
     const {email,password}=req.body;
     if(!email || !password)
@@ -137,7 +138,7 @@ export const otp_Send=async(req,res)=>{
         const email=user.email;
 
         user.optsend=otp;
-        user.otp_expiry_time=Date.now()+24*60*60*1000;
+        user.otp_expiry_time=Date.now()+5*60*1000;
 
         await user.save();
 
@@ -274,3 +275,19 @@ export const resetpassword=async(req,res)=>{
     }
 }
 
+export const delete_unverify_students=async(req,res)=>{
+
+    try {
+        const currentTime=Date.now();
+        const verify=await studentmodel.deleteMany({
+            user_verify:false,
+            otp_expiry_time :{$lt :currentTime}
+        });
+        return res.status(400).send({message:"Unverified students deleted"});
+    } catch (error) {
+        console.log(error.data)
+        return res.status(401).send({message:"error occur in delete unverified student deletion",error});
+        
+    }
+
+}

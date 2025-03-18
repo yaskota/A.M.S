@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { CgProfile } from "react-icons/cg";
 import { IoEyeOff } from "react-icons/io5";
 import { FaEye } from "react-icons/fa";
@@ -19,6 +19,36 @@ function Registration() {
   const [branch, setBranch] = useState("");
   const [year, setYear] = useState("");
 
+  const delete_Unverify_students=async()=>{
+   
+    
+    try {
+        console.log("up");
+      const deleted = await axios.delete('http://localhost:3001/api/authstudent/deleteUnverifiedStudents');
+      console.log("lower");
+      toast.success(deleted.data.message);
+
+    } catch (error) {
+      if(error.response)
+      {
+        toast.error(error.response.data.message);
+      }
+      else
+      {
+        toast.error("something went wrong")
+      }
+      console.log("error occur in the deleting student data")
+    }
+  }
+
+  useEffect(()=>{
+
+    const fetchData = async () => {
+      await delete_Unverify_students();
+    };
+  
+    fetchData();
+  },[])
 
   const validateEmail = (email) => {
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;

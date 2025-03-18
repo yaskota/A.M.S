@@ -1,5 +1,5 @@
 import express from 'express'
-import { is_Authenticated, login, logout, otp_Send, register, resendOtp, resetpassword, verify_Email } from '../controllers/authstudent.js'
+import { delete_unverify_students, is_Authenticated, login, logout, otp_Send, register, resendOtp, resetpassword, verify_Email } from '../controllers/authstudent.js'
 import userAuth from '../middleware/userauth.js'
 
 const studentrouter=express.Router()
@@ -12,5 +12,6 @@ studentrouter.post('/verifyEmail',userAuth,verify_Email)
 studentrouter.post('/is_Auth',userAuth,is_Authenticated)
 studentrouter.post('/resendOtp',userAuth,resendOtp)
 studentrouter.post('/resetPassword',userAuth,resetpassword)
+studentrouter.delete('/deleteUnverifiedStudents',delete_unverify_students);
 export default studentrouter;
 
