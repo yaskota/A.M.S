@@ -7,6 +7,9 @@ import Otp from './components/Otp.js';
 import Resetpassword from './components/Resetpassword.js';
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
 import Main from './components/Main.js';
+import Teachermain from './components/Teachermain.js';
+import Create_class from './components/Create_class.js';
+import Class from './components/Class.js';
 
 function App() {
   return (
@@ -19,7 +22,9 @@ function App() {
         <Route path="/mail" element={<Mail/>}/>
         <Route path="/resetpassword" element={<Resetpassword/>}/>
         <Route path="/main" element={<Main/>}/>
-
+        <Route path='/teachermain' element={<Teachermain/>}/>
+        <Route path='/createclass' element={<Create_class/>}/>
+        <Route path='/class' element={<Class/>}/>
       </Routes>
     </Router>
     </div>
