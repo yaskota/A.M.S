@@ -60,11 +60,11 @@ function Registration() {
     try {
       event.preventDefault();
       axios.defaults.withCredentials=true;
-      if(!validateEmail(email))
-      {
-        toast.error("please enter a valid email");
-        return;
-      }
+      // if(!validateEmail(email))
+      // {
+      //   toast.error("please enter a valid email");
+      //   return;
+      // }
       if (password !== conformpassword) {
         console.log("password not same");
         toast.error("Password not same");

@@ -21,11 +21,11 @@ function Login() {
 
 const handlogin=async(event)=>{
       axios.defaults.withCredentials=true;
-      if(!validateEmail(email))
-      {
-        toast.error("please enter valid email");
-        return;
-      }
+      // if(!validateEmail(email))
+      // {
+      //   toast.error("please enter valid email");
+      //   return;
+      // }
       try {
         event.preventDefault();
         
